@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Catalog - Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Add Catalog</h1>
+    <div class="button-container">
+        <a href="index.html"><button class="back-button">Back</button></a>
+    </div>
+    <form id="addItemForm">
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="">Select category...</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <!-- Add more options for categories as needed -->
+        </select>
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="image">Item Image:</label>
+        <input type="text" id="image" name="image"><br>
+        <label for="location">Item Location:</label>
+        <input type="text" id="location" name="location" required><br>
+        <label for="price">Item Price:</label>
+        <input type="number" id="price" name="price" required><br>
+        <label for="priceRangeMin">Item Price Range (Min):</label>
+        <input type="number" id="priceRangeMin" name="priceRangeMin"><br>
+        <label for="priceRangeMax">Item Price Range (Max):</label>
+        <input type="number" id="priceRangeMax" name="priceRangeMax"><br>
+        <label for="discount">Item Discount:</label>
+        <input type="number" id="discount" name="discount"><br>
+        <label for="count">Item Count:</label>
+        <input type="number" id="count" name="count" required><br>
+        <label for="lastUpdate">Last Update:</label>
+        <input type="date" id="lastUpdate" name="lastUpdate"><br>
+        <label for="supplier1Name">Supplier 1 Name:</label>
+        <input type="text" id="supplier1Name" name="supplier1Name"><br>
+        <label for="supplier1Phone">Supplier 1 Phone:</label>
+        <input type="tel" id="supplier1Phone" name="supplier1Phone"><br>
+        <label for="supplier2Name">Supplier 2 Name:</label>
+        <input type="text" id="supplier2Name" name="supplier2Name"><br>
+        <label for="supplier2Phone">Supplier 2 Phone:</label>
+        <input type="tel" id="supplier2Phone" name="supplier2Phone"><br>
+        <button type="submit">Add Item</button>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

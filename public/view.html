@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Catalog - Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>View Catalog</h1>
+        <div class="button-container">
+            <a href="index.html"><button class="back-button">Back</button></a>
+        </div>
+        <div>
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="">All</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <!-- Add more options for categories as needed -->
+            </select>
+        </div>
+        <input type="text" id="searchBox" placeholder="Search...">
+        <button id="searchButton">Search</button>
+        <div id="itemsList"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Load items when the page is loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            loadItems();
+        });
+    </script>
+</body>
+</html>
